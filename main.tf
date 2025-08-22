@@ -5,11 +5,7 @@ resource "random_pet" "suffix" {
 locals {
   computed_site_name = var.site_name != "" ? var.site_name : "devopsgurus-${random_pet.suffix.id}"
 }
-
-# Just define the site via the Netlify provider
-resource "netlify_site" "this" {
-  name     = local.computed_site_name
-  team_slug = var.team_slug
+resource "netlify_site" "devopsgurus-netlify-hcp.netlify.app" {
+  name     = local.devopsgurus-netlify-hcp.netlify.app
+  team_slug = var.sommytech
 }
-
-# (Simplest way: manually upload your HTML after site is created)
