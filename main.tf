@@ -7,5 +7,5 @@ locals {
 }
 resource "netlify_site" "devopsgurus-netlify-hcp.netlify.app" {
   name     = local.computed_site_name
-  somitech = var.somitech
+  team_name = var.team_name
 }
