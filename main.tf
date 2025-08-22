@@ -6,6 +6,6 @@ locals {
   computed_site_name = var.site_name != "" ? var.site_name : "devopsgurus-${random_pet.suffix.id}"
 }
 resource "netlify_site" "devopsgurus-netlify-hcp.netlify.app" {
-  name     = local.devopsgurus-netlify-hcp.netlify.app
-  team_slug = var.sommytech
+  name     = local.computed_site_name
+  somitech = var.somitech
 }
