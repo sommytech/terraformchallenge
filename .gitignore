@@ -1,0 +1,10 @@
+
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+*.tfvars
+*.tfvars.json
+.env
+.DS_Store
+.vscode/
+.idea/
