@@ -5,7 +5,7 @@ resource "random_pet" "suffix" {
 locals {
   computed_site_name = var.site_name != "" ? var.site_name : "devopsgurus-${random_pet.suffix.id}"
 }
-resource "netlify_site" "devopsgurus-netlify-hcp.netlify.app" {
+resource "netlify_site" "this" {
   name     = local.computed_site_name
   team_name = var.team_name
 }
