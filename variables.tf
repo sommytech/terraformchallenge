@@ -1,4 +1,4 @@
-variable "somitech" {
+variable "team_name" {
   description = "somitechhugibadan"
   type        = string
 }
