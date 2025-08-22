@@ -4,7 +4,7 @@ variable "somitech" {
 }
 
 variable "site_name" {
-  description = "somitechhugibadan"
+  description = "https://devopsgurus-netlify-hcp.netlify.app/"
   type        = string
   default     = ""
 }
